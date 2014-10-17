@@ -30,10 +30,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
+    'django.contrib.contenttypes',
     'cards',
     'django.contrib.admin',
     'django.contrib.auth',
-    'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
@@ -52,6 +52,7 @@ ROOT_URLCONF = 'war.urls'
 
 WSGI_APPLICATION = 'war.wsgi.application'
 
+STATIC_ROOT= os.path.join(BASE_DIR, 'static')
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases

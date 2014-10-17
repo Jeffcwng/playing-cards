@@ -4,6 +4,12 @@
     <p>Hi {{ user.username }}, you have 0 wins and 0 loses.</p>
     <p>Your email address is {{ user.email }}</p>
 
+{#    from week7 3pm  3-4 slides for testing#}
+    <p>Hi {{ user.username }}, you have {{ wins }} wins and {{ losses }} loses and {{ ties }} ties.</p>
+
+    <p> record display ::: {{ record }}</p>
+
+
     <h2>Past Games</h2>
     {% for game in games %}
         <p>{{ game.get_result_display }}</p>
